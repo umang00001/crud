@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+button{
+    cursor: pointer;
+}
+
+.header{
+    background-color: tomato;
+    padding: 15px;
+}
+.header h3{
+    color: white;
+    font-size: 25px;
+}
+.bottom_navbar{
+    display: flex;
+    margin-top: 50px;
+}
+
+.first_navbar_div button{
+    font-size: 18px;
+    background-color: rgb(69, 69, 180);
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    color: white;
+    font-weight: bold;
+
+}
+.second_navbar_div{
+    margin-left: 400px;
+    
+}
+.second_navbar_div input{
+    width: 400px;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid rgb(69, 69, 180);
+    font-size: 20px;
+}
+.second_navbar_div i{
+    font-size: 25px;
+    padding-right: 5px;
+    color: rgb(69, 69, 180);
+
+}
+.second_navbar_div button{
+    color: white;
+    font-size: 18px;
+    padding: 8px 15px;
+    border: none;
+}
+/* ====================================          table                 ==================================== */
+.table_div{
+    margin-top: 50px;
+    padding: 15px;
+}
+
+
+table{width: 100%;
+     
+}
+tr{
+    
+
+}
+th{
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    padding-top: 20px;
+}
+td{
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    font-size: 18px;
+    text-align: center;
+    
+    
+    
+}
+td button{
+    
+    padding: 5px 15px;
+    margin: 5px;
+    border: none;
+    color: white;
+}
+
+
+/* ====================================          form                 ==================================== */
+
+
+.form_div{
+   display: flex;
+   position: fixed;
+   
+  left: 350px;
+  top: 30%;
+  background-color: #ccc;
+  padding: 20px;
+  border-top: 10px groove rgb(69, 69, 180);
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.6s ease-in-out;
+ width: 0;
+  
+}
+.active{
+    visibility: visible;
+    opacity: 1;
+    width: 700px;
+    
+}
+.profile_div img{
+    width: 150px;
+}
+.profile_div input{
+    width: 40px;
+    position: absolute;
+    z-index: 2;
+    top: 50px;
+    opacity: 0;
+    margin-left: 10px;
+
+    
+    
+}
+
+.profile_div i{
+    font-size: 30px;
+    position: absolute;
+    z-index: 1;
+    top: 50px;
+    margin-left: 10px;
+}
+
+
+
+.input_main_div{
+    margin-left: 70px;
+    border-left: 3px solid rgb(69, 69, 180);
+}
+.input_div{
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 10px;
+}
+.input_div label{
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 20px;
+    
+}
+.input_div input{
+    border: none;
+    border-bottom: 1px solid rgb(69, 69, 180);
+    outline: none;
+    font-size: 18px;
+    background-color: #ccc;
+    margin-left: 8px;
+}
+.close_icon{
+    position: absolute;
+    top: -25px;
+    right: -18px;
+    font-size: 25px;
+    background-color: tomato;
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.input_btn button{
+    padding: 8px 20px;
+    font-size: 18px;
+    color: white;
+    margin: 5px;
+    border: none;
+}
+.input_btn{
+    margin-left: 50px;
+}

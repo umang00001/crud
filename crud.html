@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>crud two</title>
+    <link rel="stylesheet" href="crud.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</head>
+
+<body>
+    <div class="header">
+        <h3>employee</h3>
+    </div>
+    <div class="bottom_navbar">
+        <div class="first_navbar_div">
+            <button id="add_emloyee"><i class="fa-solid fa-plus"></i>add amployee</button>
+            <button id="clear_btn"style="background-color: rgb(144, 144, 196);"><i class="fa-solid fa-eraser"></i> clear
+                all data</button>
+        </div>
+        <div class="second_navbar_div">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input id="search_data" type="text" placeholder="type here">
+            <button style="background-color: tomato;">search</button>
+        </div>
+    </div>
+
+    <!-- =====================================               tabel             ============================================ -->
+    <div class="table_div">
+        <table>
+            <tr>
+                <th>Sr No</th>
+                <th>Profil</th>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Office code</th>
+                <th>Job Title</th>
+                <th>Action</th>
+            </tr>
+
+            <tbody id="table">
+
+            </tbody>
+        </table>
+        
+        
+    </div>
+
+    <!-- =====================================              form          ============================================ -->
+
+    <div class="form_div">
+        <i class="fa-solid fa-xmark close_icon"></i>
+
+        <div class="profile_div">
+            <img src="img/profile.png" alt="">
+            <input type="file">
+            <i class="fa-solid fa-plus"></i>
+        </div>
+
+
+        <div class="input_main_div">
+            <form id="form">
+                <div class="input_div" required>
+                    <label>id</label><input type="text" id="id">
+                </div>
+                <div class="input_div">
+                    <label>Name </label><input type="text" id="Name">
+                </div>
+                <div class="input_div">
+                    <label>Last Name</label><input type="text" id="l_name">
+                </div>
+                <div class="input_div">
+                    <label for="Email">Email</label><input type="text" id="Email">
+                </div>
+                <div class="input_div">
+                    <label>Office Code</label><input type="text" id="Office_Code">
+                </div>
+                <div class="input_div">
+                    <label>Job TItle</label><input type="text" id="Job_TItle">
+                </div>
+
+                <div class="input_btn">
+                    <button id="register_btn" style="background-color: rgb(69, 69, 180);">register</button>
+                    <button id="update_btn"  >update</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+    <script src="crud.js"></script>
+</body>
+
+</html>
